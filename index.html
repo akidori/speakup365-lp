@@ -9,8 +9,14 @@
       font-family: sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f8fc;
-      color: #333;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
 
     .hero {
@@ -46,129 +52,140 @@
 
     .overview {
       padding: 60px 20px;
-      background: #ffffff;
+      background: #1b1b1b;
       text-align: center;
     }
 
     .overview h2 {
       font-size: 2rem;
-      color: #2a7ae2;
+      color: #00d1ff;
       margin-bottom: 20px;
     }
 
     .overview p {
       font-size: 1.1rem;
       line-height: 1.8;
+      color: #ccc;
     }
+
     .steps {
-  background: #f0f5ff;
-  padding: 60px 20px;
-  text-align: center;
-}
+      background: #151515;
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-.steps h2 {
-  font-size: 2rem;
-  color: #2a7ae2;
-  margin-bottom: 40px;
-}
+    .steps h2 {
+      font-size: 2rem;
+      color: #00d1ff;
+      margin-bottom: 40px;
+    }
 
-.step-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
+    .step-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
 
-.step-item {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  width: 180px;
-}
+    .step-item {
+      background: #222;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      width: 180px;
+    }
 
-.step-number {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #2a7ae2;
-  display: block;
-  margin-bottom: 10px;
-}
+    .step-number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #00d1ff;
+      display: block;
+      margin-bottom: 10px;
+    }
 
-.step-item p {
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.5;
-}
-.features {
-  background: #f8fbff;
-  padding: 60px 20px;
-  text-align: center;
-}
+    .step-item p {
+      font-size: 1rem;
+      color: #ccc;
+      line-height: 1.5;
+    }
 
-.features h2 {
-  font-size: 2rem;
-  color: #2a7ae2;
-  margin-bottom: 40px;
-}
+    .features-dark {
+      background: #000;
+      padding: 80px 20px;
+      text-align: center;
+    }
 
-.feature-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
+    .features-title {
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 60px;
+      letter-spacing: 1px;
+      color: #00d1ff;
+    }
 
-.feature-item {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  width: 280px;
-}
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
 
-.feature-item h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #333;
-}
+    .feature-card {
+      background: #1b1b1b;
+      border-radius: 16px;
+      padding: 30px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 0 transparent;
+    }
 
-.feature-item p {
-  font-size: 1rem;
-  color: #666;
-}
-.cta-final {
-  background: linear-gradient(to right, #2a7ae2, #6ba9ff);
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-}
+    .feature-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      color: #ffd700;
+    }
 
-.cta-final h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
+    .feature-card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
 
-.cta-final p {
-  font-size: 1.1rem;
-  margin-bottom: 40px;
-}
+    .feature-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
 
-.cta-button-large {
-  background: white;
-  color: #2a7ae2;
-  padding: 18px 40px;
-  border-radius: 40px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  text-decoration: none;
-  transition: 0.3s;
-  display: inline-block;
-}
+    .cta-final {
+      background: linear-gradient(to right, #2a7ae2, #6ba9ff);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
 
-.cta-button-large:hover {
-  background: #e3eefe;
-}
+    .cta-final h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-final p {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+
+    .cta-button-large {
+      background: white;
+      color: #2a7ae2;
+      padding: 18px 40px;
+      border-radius: 40px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .cta-button-large:hover {
+      background: #e3eefe;
+    }
   </style>
 </head>
 <body>
@@ -180,55 +197,67 @@
   </section>
 
   <section class="overview">
-    <h2>Speakアップ365とは？</h2>
-    <p>
-      毎日1分、LINEで英語の音声を送るだけ。<br>
-      その音声に対して「文字起こし＋フィードバック＋改善アドバイス」が24時間以内に届きます。<br>
-      土日も365日対応。英語が“自然に口から出てくる体質”をつくる、新しいスピーキング特化型の学習サービスです。
-    </p>
+    <div class="container">
+      <h2>Speakアップ365とは？</h2>
+      <p>
+        毎日1分、LINEで英語の音声を送るだけ。<br>
+        その音声に対して「文字起こし＋フィードバック＋改善アドバイス」が24時間以内に届きます。<br>
+        土日も365日対応。英語が“自然に口から出てくる体質”をつくる、新しいスピーキング特化型の学習サービスです。
+      </p>
+    </div>
   </section>
+
   <section class="steps">
-    <h2>ご利用の流れ</h2>
-    <div class="step-list">
-      <div class="step-item">
-        <span class="step-number">①</span>
-        <p>LINEで<br>友達追加</p>
-      </div>
-      <div class="step-item">
-        <span class="step-number">②</span>
-        <p>毎日1分の<br>音声を送信</p>
-      </div>
-      <div class="step-item">
-        <span class="step-number">③</span>
-        <p>24時間以内に<br>添削とアドバイス</p>
-      </div>
-      <div class="step-item">
-        <span class="step-number">④</span>
-        <p>継続して<br>話せる体質に！</p>
-      </div>
-    </div>
-  </section>
-  <section class="features">
-    <h2>Speakアップ365の特徴</h2>
-    <div class="feature-list">
-      <div class="feature-item">
-        <h3>📱 1日1分で完結</h3>
-        <p>毎日1分、LINEで音声を送るだけ。どこでもスキマ時間でOK。</p>
-      </div>
-      <div class="feature-item">
-        <h3>👨‍🏫 プロのフィードバック</h3>
-        <p>24時間以内に、文字起こし＆添削＋改善アドバイスが届く。</p>
-      </div>
-      <div class="feature-item">
-        <h3>🎯 話せる体質になる</h3>
-        <p>毎日続けることで、自然に英語が“出てくる”感覚が身につく。</p>
+    <div class="container">
+      <h2>ご利用の流れ</h2>
+      <div class="step-list">
+        <div class="step-item">
+          <span class="step-number">①</span>
+          <p>LINEで<br>友達追加</p>
+        </div>
+        <div class="step-item">
+          <span class="step-number">②</span>
+          <p>毎日1分の<br>音声を送信</p>
+        </div>
+        <div class="step-item">
+          <span class="step-number">③</span>
+          <p>24時間以内に<br>添削とアドバイス</p>
+        </div>
+        <div class="step-item">
+          <span class="step-number">④</span>
+          <p>継続して<br>話せる体質に！</p>
+        </div>
       </div>
     </div>
   </section>
+
+  <section class="features-dark">
+    <div class="container">
+      <h2 class="features-title">Speakアップ365の特徴</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>📱 1日1分で完結</h3>
+          <p>LINEで送るだけ。スマホ1つで、どこでも英語習慣。</p>
+        </div>
+        <div class="feature-card">
+          <h3>👨‍🏫 プロによる添削</h3>
+          <p>24時間以内に届く、丁寧なフィードバックと改善アドバイス。</p>
+        </div>
+        <div class="feature-card">
+          <h3>🎯 話せる体質に</h3>
+          <p>毎日1分続けるだけで、自然に英語が出てくる感覚が育つ。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="cta-final" id="apply">
-    <h2>今日から、英語を“話せる”毎日を始めよう。</h2>
-    <p>たった1分のアウトプットが、未来を変える。</p>
-    <a href="https://lin.ee/xxxxxxxx" class="cta-button-large" target="_blank">LINEで今すぐ始める</a>
+    <div class="container">
+      <h2>今日から、英語を“話せる”毎日を始めよう。</h2>
+      <p>たった1分のアウトプットが、未来を変える。</p>
+      <a href="https://lin.ee/xxxxxxxx" class="cta-button-large" target="_blank">LINEで今すぐ始める</a>
+    </div>
   </section>
+
 </body>
 </html>
