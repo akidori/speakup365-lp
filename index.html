@@ -60,6 +60,46 @@
       font-size: 1.1rem;
       line-height: 1.8;
     }
+    .steps {
+  background: #f0f5ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.steps h2 {
+  font-size: 2rem;
+  color: #2a7ae2;
+  margin-bottom: 40px;
+}
+
+.step-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.step-item {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  width: 180px;
+}
+
+.step-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2a7ae2;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.step-item p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
   </style>
 </head>
 <body>
@@ -78,6 +118,26 @@
       土日も365日対応。英語が“自然に口から出てくる体質”をつくる、新しいスピーキング特化型の学習サービスです。
     </p>
   </section>
-
+  <section class="steps">
+    <h2>ご利用の流れ</h2>
+    <div class="step-list">
+      <div class="step-item">
+        <span class="step-number">①</span>
+        <p>LINEで<br>友達追加</p>
+      </div>
+      <div class="step-item">
+        <span class="step-number">②</span>
+        <p>毎日1分の<br>音声を送信</p>
+      </div>
+      <div class="step-item">
+        <span class="step-number">③</span>
+        <p>24時間以内に<br>添削とアドバイス</p>
+      </div>
+      <div class="step-item">
+        <span class="step-number">④</span>
+        <p>継続して<br>話せる体質に！</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
