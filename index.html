@@ -327,5 +327,19 @@
     <img src="logo.png" alt="ロゴ">
     <p>&copy; 2025 ぴえん系彼女がWEB制作教えてくれた</p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+    });
+  </script>
+
 </body>
 </html>
