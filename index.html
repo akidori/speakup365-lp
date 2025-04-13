@@ -14,10 +14,7 @@
       color: #ffffff;
       font-weight: 400;
     }
-
-    h1, h2, h3, h4, h5, h6 {
-      font-weight: 700;
-    }
+    h1, h2, h3, h4, h5, h6 { font-weight: 700; }
 
     header {
       display: flex;
@@ -25,17 +22,8 @@
       padding: 10px 20px;
       background-color: #261A18;
     }
-
-    header img {
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    header h1 {
-      font-size: 1.2rem;
-      color: #ffffff;
-      margin: 0;
-    }
+    header img { height: 40px; margin-right: 10px; }
+    header h1 { font-size: 1.2rem; color: #ffffff; margin: 0; }
 
     .hero {
       background: #F2A2C8;
@@ -44,7 +32,6 @@
       padding: 100px 20px 60px;
       position: relative;
     }
-
     .hero img {
       height: 60px;
       position: absolute;
@@ -52,18 +39,8 @@
       left: 50%;
       transform: translateX(-50%);
     }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-top: 70px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-
+    .hero h2 { font-size: 2.5rem; margin-top: 70px; margin-bottom: 20px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 30px; }
     .cta-button {
       background: white;
       color: #F2A2C8;
@@ -73,31 +50,38 @@
       font-weight: bold;
       transition: 0.3s;
     }
+    .cta-button:hover { background: #e3eefe; }
 
-    .cta-button:hover {
-      background: #e3eefe;
-    }
+    section { padding: 60px 20px; text-align: center; }
+    .overview, .features { background: #ffffff; color: #261A18; }
+    .overview h2, .features h2 { color: #F2A2C8; font-size: 2rem; margin-bottom: 20px; }
+    .overview p, .features p { font-size: 1.1rem; line-height: 1.8; }
 
-    .overview, .features, .steps, .cta-final {
-      text-align: center;
-      padding: 60px 20px;
+    .character-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
     }
-
-    .overview, .features {
-      background: #ffffff;
-      color: #261A18;
+    .character-switcher button {
+      padding: 10px 20px;
+      background: #F2A2C8;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
     }
-
-    .overview h2, .features h2, .steps h2, .cta-final h2 {
-      color: #F2A2C8;
-      font-size: 2rem;
-      margin-bottom: 20px;
+    .character-content {
+      display: none;
+      max-width: 600px;
+      margin: 0 auto;
+      background: #F2A2C8;
+      padding: 20px;
+      border-radius: 12px;
+      color: white;
     }
-
-    .overview p, .features p, .cta-final p {
-      font-size: 1.1rem;
-      line-height: 1.8;
-    }
+    .character-content.active { display: block; }
 
     .feature-list {
       display: grid;
@@ -105,17 +89,11 @@
       gap: 20px;
       margin-top: 30px;
     }
-
     .feature-item {
       background: #F2A2C8;
       padding: 20px;
       border-radius: 12px;
       color: white;
-    }
-
-    .steps {
-      background: #f0f5ff;
-      color: #261A18;
     }
 
     .step-list {
@@ -125,7 +103,6 @@
       gap: 30px;
       margin-top: 30px;
     }
-
     .step-item {
       background: white;
       color: #261A18;
@@ -134,7 +111,6 @@
       width: 200px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-
     .step-number {
       font-size: 2rem;
       font-weight: bold;
@@ -147,7 +123,6 @@
       background: linear-gradient(to right, #F2A2C8, #9B5FC0);
       color: white;
     }
-
     .cta-button-large {
       background: white;
       color: #F2A2C8;
@@ -159,21 +134,14 @@
       transition: 0.3s;
       display: inline-block;
     }
-
-    .cta-button-large:hover {
-      background: #e3eefe;
-    }
+    .cta-button-large:hover { background: #e3eefe; }
 
     footer {
       background-color: #261A18;
       padding: 20px;
       text-align: center;
     }
-
-    footer img {
-      height: 40px;
-      margin-bottom: 10px;
-    }
+    footer img { height: 40px; margin-bottom: 10px; }
   </style>
 </head>
 <body>
@@ -190,12 +158,33 @@
   </section>
 
   <section class="overview">
-    <h2>このサービスって？</h2>
-    <p>
-      毎日1分、ぴえん系彼女があなたのそばでWEB制作を教えてくれるぉ。<br>
-      初心者でも大丈夫、1日1ステップで進めるから挫折しにくい！<br>
-      サボったら…地雷が爆発するぉ🔥
-    </p>
+    <h2>ぴえんなウチ、もう限界だったぉ</h2>
+    <p>朝、電車に乗るだけでメンタルが爆発寸前。<br>
+    職場では笑顔で接客しながら、心の中では「逃げたいぉ」って叫んでた。<br><br>
+    ググって、泣いて、またググって…ようやく見つけたのがこのページだったぉ。</p>
+  </section>
+
+  <section class="features">
+    <h2>ウチに寄り添ってくれる、3人のぴえん彼女たち</h2>
+    <div class="character-switcher">
+      <button onclick="switchCharacter(0)">🥺 ぴえん彼女</button>
+      <button onclick="switchCharacter(1)">👠 どS彼女</button>
+      <button onclick="switchCharacter(2)">🖤 地雷彼女</button>
+    </div>
+    <div id="characters">
+      <div class="character-content active">
+        <h3>🥺 優しすぎる「ぴえん彼女」</h3>
+        <p>どんなエラーでも「大丈夫ぉ」って慰めてくれる。<br>サボっても毎日褒めてくれるぉ。</p>
+      </div>
+      <div class="character-content">
+        <h3>👠 容赦ない「どS彼女」</h3>
+        <p>「甘えんな」って喝を入れてくるけど、<br>ツンの裏にある本気の愛に泣けるぉ。</p>
+      </div>
+      <div class="character-content">
+        <h3>🖤 爆発寸前「地雷系ヒステリック彼女」</h3>
+        <p>突然情緒が爆発。でも本気で応援してくれてるのは伝わるぉ。</p>
+      </div>
+    </div>
   </section>
 
   <section class="features">
@@ -203,27 +192,27 @@
     <div class="feature-list">
       <div class="feature-item">
         <h3>📱 1日1分で完結</h3>
-        <p>毎日1分、スマホだけで勉強できるぉ！</p>
+        <p>スマホだけで勉強できるぉ！</p>
       </div>
       <div class="feature-item">
-        <h3>👩‍🏫 ぴえん系彼女が伴走</h3>
-        <p>いつでも横にいる感覚で一緒に教えてくれるぉ</p>
+        <h3>👩‍🏫 ぴえん彼女が伴走</h3>
+        <p>いつでも隣で教えてくれるぉ</p>
       </div>
       <div class="feature-item">
         <h3>🧠 わからなくても安心</h3>
-        <p>最後までちゃんと教えるから安心してほしいぉ</p>
+        <p>最後までちゃんとサポートするぉ</p>
       </div>
       <div class="feature-item">
         <h3>💌 毎日励まし通知</h3>
-        <p>飽きないように、毎日ぴえん系彼女が声かけてくれるぉ</p>
+        <p>飽きないように毎日声かけてくれるぉ</p>
       </div>
       <div class="feature-item">
         <h3>📖 一緒に学ぼ</h3>
-        <p>サボったら地雷が爆発するぉ</p>
+        <p>サボったら地雷が爆発するぉ💣</p>
       </div>
       <div class="feature-item">
         <h3>📲 スマホひとつでOK</h3>
-        <p>パソコンなくてもOK、スマホだけで始められるぉ</p>
+        <p>パソコンなくてもOKぉ！</p>
       </div>
     </div>
   </section>
@@ -237,7 +226,7 @@
       </div>
       <div class="step-item">
         <span class="step-number">②</span>
-        <p>ぴえん系彼女が教えてくれる</p>
+        <p>ぴえん彼女が教えてくれる</p>
       </div>
       <div class="step-item">
         <span class="step-number">③</span>
@@ -256,5 +245,14 @@
     <img src="logo.png" alt="ロゴ">
     <p>&copy; 2025 ぴえん系彼女がWEB制作教えてくれた</p>
   </footer>
+
+  <script>
+    function switchCharacter(index) {
+      const contents = document.querySelectorAll('.character-content');
+      contents.forEach((el, i) => {
+        el.classList.toggle('active', i === index);
+      });
+    }
+  </script>
 </body>
 </html>
