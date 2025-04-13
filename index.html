@@ -97,7 +97,7 @@
     }
     .feature-list {
   display: flex; /* グリッド → フレックスに変更 */
-  flex-wrap: nowrap; /* 折り返さず横に並べる */
+  flex-wrap: wrap; /* 折り返さず横に並べる */
   gap: 20px;
   overflow-x: auto; /* はみ出た分は横スクロールにする */
   padding-bottom: 10px;
@@ -107,6 +107,7 @@
       padding: 20px;
       border-radius: 12px;
       color: #ffffff;
+      max-width: 300px;  /* ← 追加すると良い感じに揃うぉ */
     }
     .steps {
       background: #f0f5ff;
@@ -292,9 +293,8 @@
   </section>
 
   <section class="features">
-  <h2>ウチに寄り添ってくれる、3人のぴえん彼女たち</h2>
-  <div class="feature-list">
-    <div class="feature-item">
+    <h2>ウチに寄り添ってくれる、3人のぴえん彼女たち</h2>
+    <div class="feature-list">
       <div class="feature-item">
         <img src="pien_girlfriend.png" alt="ぴえん彼女" style="width: 100px; margin-bottom: 10px;" />
         <h3>🥺 優しすぎる「ぴえん彼女」</h3>
@@ -311,8 +311,7 @@
         <p>突然情緒が爆発。でもウチのことを本気で思ってるのは伝わるぉ。<br>情緒ジェットコースターでスキル急成長。</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section class="steps animate">
     <h2>ご利用の流れ</h2>
