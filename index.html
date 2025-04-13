@@ -4,43 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ぴえん系彼女がWEB制作教えてくれた</title>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --pink-accent: #F2A2C8;
-      --brown-accent: #261A18;
-      --purple-accent: #b292d5;
-      --text-white: #ffffff;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
 
     body {
-      font-family: 'Zen Kaku Gothic New', sans-serif;
+      font-family: 'Zen Kurenaido', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: var(--brown-accent);
-      color: var(--text-white);
+      background-color: #f4f8fc;
+      color: #ffffff;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #261A18;
+    }
+
+    header img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    header h1 {
+      font-size: 1.2rem;
+      color: #ffffff;
+      margin: 0;
     }
 
     .hero {
-      background: var(--pink-accent);
-      color: var(--text-white);
+      background: #F2A2C8;
+      color: white;
       text-align: center;
       padding: 100px 20px 60px;
+      position: relative;
     }
 
-    .hero h1 {
+    .hero img {
+      height: 60px;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .hero h2 {
       font-size: 2.5rem;
+      margin-top: 70px;
       margin-bottom: 20px;
     }
 
     .hero p {
-      font-size: 1.3rem;
-      margin-bottom: 40px;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
     }
 
     .cta-button {
-      background: var(--text-white);
-      color: var(--pink-accent);
+      background: white;
+      color: #F2A2C8;
       padding: 15px 30px;
       border-radius: 30px;
       text-decoration: none;
@@ -49,37 +71,47 @@
     }
 
     .cta-button:hover {
-      background: var(--purple-accent);
-      color: var(--text-white);
+      background: #e3eefe;
     }
 
-    .overview {
-      background: var(--brown-accent);
-      padding: 60px 20px;
+    .overview, .features, .steps, .cta-final {
       text-align: center;
+      padding: 60px 20px;
     }
 
-    .overview h2 {
+    .overview, .features {
+      background: #ffffff;
+      color: #261A18;
+    }
+
+    .overview h2, .features h2, .steps h2, .cta-final h2 {
+      color: #F2A2C8;
       font-size: 2rem;
-      color: var(--pink-accent);
       margin-bottom: 20px;
     }
 
-    .overview p {
+    .overview p, .features p, .cta-final p {
       font-size: 1.1rem;
       line-height: 1.8;
     }
 
-    .steps {
-      background: var(--purple-accent);
-      padding: 60px 20px;
-      text-align: center;
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
     }
 
-    .steps h2 {
-      font-size: 2rem;
-      color: var(--text-white);
-      margin-bottom: 40px;
+    .feature-item {
+      background: #F2A2C8;
+      padding: 20px;
+      border-radius: 12px;
+      color: white;
+    }
+
+    .steps {
+      background: #f0f5ff;
+      color: #261A18;
     }
 
     .step-list {
@@ -87,86 +119,34 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
+      margin-top: 30px;
     }
 
     .step-item {
-      background: var(--text-white);
-      color: var(--brown-accent);
+      background: white;
+      color: #261A18;
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
       width: 200px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
 
     .step-number {
       font-size: 2rem;
       font-weight: bold;
-      color: var(--pink-accent);
+      color: #F2A2C8;
       display: block;
       margin-bottom: 10px;
     }
 
-    .step-item p {
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-
-    .features {
-      background: var(--brown-accent);
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    .features h2 {
-      font-size: 2rem;
-      color: var(--pink-accent);
-      margin-bottom: 40px;
-    }
-
-    .feature-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 30px;
-      padding: 0 10px;
-    }
-
-    .feature-item {
-      background: var(--text-white);
-      color: var(--brown-accent);
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    .feature-item h3 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-
-    .feature-item p {
-      font-size: 1rem;
-    }
-
     .cta-final {
-      background: linear-gradient(to right, var(--pink-accent), var(--purple-accent));
-      color: var(--text-white);
-      text-align: center;
-      padding: 80px 20px;
-    }
-
-    .cta-final h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    .cta-final p {
-      font-size: 1.1rem;
-      margin-bottom: 40px;
+      background: linear-gradient(to right, #F2A2C8, #9B5FC0);
+      color: white;
     }
 
     .cta-button-large {
-      background: var(--text-white);
-      color: var(--pink-accent);
+      background: white;
+      color: #F2A2C8;
       padding: 18px 40px;
       border-radius: 40px;
       font-weight: bold;
@@ -177,26 +157,71 @@
     }
 
     .cta-button-large:hover {
-      background: var(--purple-accent);
-      color: var(--text-white);
+      background: #e3eefe;
+    }
+
+    footer {
+      background-color: #261A18;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer img {
+      height: 40px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="logo.png" alt="ロゴ">
+    <h1>ぴえん系彼女がWEB制作教えてくれた</h1>
+  </header>
 
   <section class="hero">
-    <h1>ぴえん系彼女がWEB制作教えてくれた</h1>
+    <img src="logo.png" alt="ロゴ中央">
+    <h2>ぴえん系彼女がWEB制作教えてくれた</h2>
     <p>ぴえんでも大丈夫。ゼロから一緒にやろぉ</p>
     <a class="cta-button" href="#apply">LINEで始める</a>
   </section>
 
   <section class="overview">
-    <h2>どんなサービス？</h2>
+    <h2>このサービスって？</h2>
     <p>
-      ぴえん系彼女があなたの横で一緒に学んでくれるWEB制作レッスンぉ。<br>
-      HTMLやCSSが難しくても、毎日少しずつなら大丈夫ぉ。<br>
-      わからないことがあっても、最後まで一緒に走りきるぉ。
+      毎日1分、ぴえん系彼女があなたのそばでWEB制作を教えてくれるぉ。<br>
+      初心者でも大丈夫、1日1ステップで進めるから挫折しにくい！<br>
+      サボったら…地雷が爆発するぉ🔥
     </p>
+  </section>
+
+  <section class="features">
+    <h2>サービスの特徴</h2>
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>📱 1日1分で完結</h3>
+        <p>毎日1分、スマホだけで勉強できるぉ！</p>
+      </div>
+      <div class="feature-item">
+        <h3>👩‍🏫 ぴえん系彼女が伴走</h3>
+        <p>いつでも横にいる感覚で一緒に教えてくれるぉ</p>
+      </div>
+      <div class="feature-item">
+        <h3>🧠 わからなくても安心</h3>
+        <p>最後までちゃんと教えるから安心してほしいぉ</p>
+      </div>
+      <div class="feature-item">
+        <h3>💌 毎日励まし通知</h3>
+        <p>飽きないように、毎日ぴえん系彼女が声かけてくれるぉ</p>
+      </div>
+      <div class="feature-item">
+        <h3>📖 一緒に学ぼ</h3>
+        <p>サボったら地雷が爆発するぉ</p>
+      </div>
+      <div class="feature-item">
+        <h3>📲 スマホひとつでOK</h3>
+        <p>パソコンなくてもOK、スマホだけで始められるぉ</p>
+      </div>
+    </div>
   </section>
 
   <section class="steps">
@@ -204,54 +229,28 @@
     <div class="step-list">
       <div class="step-item">
         <span class="step-number">①</span>
-        <p>LINEで<br>友達追加ぉ</p>
+        <p>LINEで友達追加</p>
       </div>
       <div class="step-item">
         <span class="step-number">②</span>
-        <p>送られてくる<br>課題をチェック</p>
+        <p>ぴえん系彼女が教えてくれる</p>
       </div>
       <div class="step-item">
         <span class="step-number">③</span>
-        <p>わからないところは<br>ぴえん彼女に聞くぉ</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="features">
-    <h2>このサービスのメリット</h2>
-    <div class="feature-list">
-      <div class="feature-item">
-        <h3>📱 スマホだけでOK</h3>
-        <p>PCなくてもまずはスマホでできるぉ。</p>
-      </div>
-      <div class="feature-item">
-        <h3>💖 一緒に学ぼ</h3>
-        <p>サボったら地雷が爆発するぉ。</p>
-      </div>
-      <div class="feature-item">
-        <h3>👩‍💻 ぴえん彼女が教えるぉ</h3>
-        <p>ぴえん系彼女がやさしくサポートしてくれるぉ。</p>
-      </div>
-      <div class="feature-item">
-        <h3>🤝 最後まで寄り添うぉ</h3>
-        <p>途中で投げ出しても置いていかないぉ。</p>
-      </div>
-      <div class="feature-item">
-        <h3>🎀 毎日ぴえんで励ますぉ</h3>
-        <p>かわいいぴえん彼女が毎日元気くれるぉ。</p>
-      </div>
-      <div class="feature-item">
-        <h3>💸 価格もぴえん価格</h3>
-        <p>安心の明朗会計ぉ。</p>
+        <p>学んだら毎日1つアウトプット</p>
       </div>
     </div>
   </section>
 
   <section class="cta-final" id="apply">
-    <h2>今からぴえんと一緒に始めよ？</h2>
-    <p>あなたの「できた！」を、今日から毎日に。</p>
+    <h2>今日から、WEB制作を始めよぉ</h2>
+    <p>ゼロからでも、一緒にやれば大丈夫ぉ。</p>
     <a href="https://lin.ee/xxxxxxxx" class="cta-button-large" target="_blank">LINEで今すぐ始める</a>
   </section>
 
+  <footer>
+    <img src="logo.png" alt="ロゴ">
+    <p>&copy; 2025 ぴえん系彼女がWEB制作教えてくれた</p>
+  </footer>
 </body>
 </html>
