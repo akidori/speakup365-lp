@@ -11,7 +11,7 @@
       margin: 0;
       padding: 0;
       background-color: #f4f8fc;
-      color: #ffffff;
+      color: #261A18;
       font-weight: 400;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -43,7 +43,7 @@
     }
     .hero {
       background: #F2A2C8;
-      color: white;
+      color: #ffffff;
       text-align: center;
       padding: 100px 20px 60px;
       position: relative;
@@ -76,13 +76,9 @@
     .cta-button:hover {
       background: #e3eefe;
     }
-    .intro, .features, .steps, .girlfriends, .cta-final {
-      text-align: center;
+    section {
       padding: 60px 20px;
-    }
-    .features, .steps {
-      background: #ffffff;
-      color: #261A18;
+      text-align: center;
     }
     .intro h2, .features h2, .steps h2, .cta-final h2, .girlfriends h2 {
       color: #F2A2C8;
@@ -92,6 +88,9 @@
     .intro p, .features p, .cta-final p {
       font-size: 1.1rem;
       line-height: 1.8;
+    }
+    .features {
+      background: #ffffff;
     }
     .feature-list {
       display: grid;
@@ -103,11 +102,10 @@
       background: #F2A2C8;
       padding: 20px;
       border-radius: 12px;
-      color: white;
+      color: #ffffff;
     }
     .steps {
       background: #f0f5ff;
-      color: #261A18;
     }
     .step-list {
       display: flex;
@@ -152,11 +150,6 @@
     .girlfriend-card:hover {
       transform: translateY(-5px);
     }
-    .girlfriend-card img {
-      width: 100px;
-      height: auto;
-      margin-bottom: 15px;
-    }
     .girlfriend-card h3 {
       font-size: 1.2rem;
       color: #261A18;
@@ -168,7 +161,7 @@
     }
     .cta-final {
       background: linear-gradient(to right, #F2A2C8, #9B5FC0);
-      color: white;
+      color: #ffffff;
     }
     .cta-button-large {
       background: white;
@@ -188,6 +181,7 @@
       background-color: #261A18;
       padding: 20px;
       text-align: center;
+      color: #ffffff;
     }
     footer img {
       height: 40px;
@@ -212,12 +206,14 @@
     <img src="logo.png" alt="ロゴ">
     <h1>ぴえん系彼女がWEB制作教えてくれた</h1>
   </header>
+
   <section class="hero animate">
     <img src="logo.png" alt="ロゴ中央">
     <h2>ぴえん系彼女がWEB制作教えてくれた</h2>
     <p>ぴえんでも大丈夫。ゼロから一緒にやろぉ</p>
     <a class="cta-button" href="#apply">LINEで始める</a>
   </section>
+
   <section class="intro animate">
     <h2>ぴえんなウチでも、生きていけるかも…？</h2>
     <p>
@@ -227,6 +223,7 @@
       メンタル弱々でも、ぴえん彼女と一緒なら、できるかもって。
     </p>
   </section>
+
   <section class="features animate">
     <h2>サービスの特徴</h2>
     <div class="feature-list">
@@ -243,8 +240,8 @@
         <p>わからなくても、わかるまで一緒にやるぉ</p>
       </div>
       <div class="feature-item">
-        <h3>💌 毎日励まし通知が届く</h3>
-        <p>飽きずにモチベ継続できるぉ</p>
+        <h3>📬 毎日助け言葉が届く</h3>
+        <p>飽きずにモチベ続続できるぉ</p>
       </div>
       <div class="feature-item">
         <h3>📖 一緒に学ぼ</h3>
@@ -256,18 +253,19 @@
       </div>
     </div>
   </section>
+
   <section class="girlfriends animate">
-    <h2>3人のぴえん系彼女がサポートするぉ</h2>
+    <h2>3人のぴえん彼女がサポートするぉ</h2>
     <div class="girlfriend-list">
       <div class="girlfriend-card">
         <img src="pien_girlfriend.png" alt="ぴえん彼女">
         <h3>やさしいぴえん彼女</h3>
-        <p>褒めて伸ばすタイプ！ちょっとでもできたら全力で喜んでくれるぉ✨</p>
+        <p>誉めて伸ばすタイプ！ちょっとでもできたら全力で喜んでくれるぉ✨</p>
       </div>
       <div class="girlfriend-card">
         <img src="doS_girlfriend.png" alt="ドS彼女">
         <h3>ドS系彼女</h3>
-        <p>サボったら秒で煽ってくるけど、愛があるツンデレタイプ💥</p>
+        <p>サボったら秒で煮らしてくるけど、愛があるツンデレタイプ💥</p>
       </div>
       <div class="girlfriend-card">
         <img src="jiraikei_girlfriend.png" alt="地雷系彼女">
@@ -276,31 +274,21 @@
       </div>
     </div>
   </section>
+
   <section class="steps animate">
     <h2>ご利用の流れ</h2>
     <div class="step-list">
       <div class="step-item">
-        <span class="step-number">①</span>
+        <span class="step-number">１</span>
         <p>LINEで友達追加</p>
       </div>
       <div class="step-item">
-        <span class="step-number">②</span>
-        <p>ぴえん系彼女が教えてくれる</p>
+        <span class="step-number">２</span>
+        <p>ぴえん彼女が教えてくれる</p>
       </div>
       <div class="step-item">
-        <span class="step-number">③</span>
-        <p>学んだら1つアウトプット</p>
+        <span class="step-number">３</span>
+        <p>学んだら一つアウトプット</p>
       </div>
     </div>
   </section>
-  <section class="cta-final animate" id="apply">
-    <h2>今日から、WEB制作を始めよぉ</h2>
-    <p>ゼロからでも、一緒にやれば大丈夫ぉ。</p>
-    <a href="https://lin.ee/xxxxxxxx" class="cta-button-large" target="_blank">LINEで今すぐ始める</a>
-  </section>
-  <footer class="animate">
-    <img src="logo.png" alt="ロゴ">
-    <p>&copy; 2025 ぴえん系彼女がWEB制作教えてくれた</p>
-  </footer>
-</body>
-</html>
