@@ -17,16 +17,16 @@
       background: #F2A2C8;
       color: #261A18;
       text-align: center;
-      padding: 120px 20px;
+      padding: 100px 20px;
     }
 
     .hero h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       margin-bottom: 20px;
     }
 
     .hero p {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       margin-bottom: 30px;
     }
 
@@ -106,7 +106,7 @@
       color: #261A18;
       padding: 20px;
       border-radius: 12px;
-      width: 220px;
+      width: 180px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
@@ -150,14 +150,26 @@
     .cta-button-large:hover {
       background: #ffe2f0;
     }
+
+    @media (max-width: 768px) {
+      .feature-list, .step-list {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+      }
+
+      .step-item, .feature-item {
+        width: 90%;
+      }
+    }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <section class="hero">
-    <h1>ぴえんでも大丈夫。ゼロから一緒にやろぉ</h1>
-    <p>ぴえん系彼女が、あなたのWEBスキルを一緒に育ててくれるぉ！</p>
+    <h1>ぴえん系彼女がWEB制作教えてくれた</h1>
+    <p>ぴえんでも大丈夫。ゼロから一緒にやろぉ</p>
     <a class="cta-button" href="#apply">LINEで始めるぉ</a>
   </section>
 
@@ -180,6 +192,14 @@
         <h3>🎀 毎日励まされるぉ</h3>
         <p>やる気が続く秘密、それは"ぴえん力"ぉ！</p>
       </div>
+      <div class="feature-item">
+        <h3>📱 スマホだけでOK</h3>
+        <p>パソコンがなくても学べる安心設計ぉ！</p>
+      </div>
+      <div class="feature-item">
+        <h3>💸 価格も明快</h3>
+        <p>安心の月額制、追加料金なしぉ！</p>
+      </div>
     </div>
   </section>
 
@@ -192,17 +212,17 @@
       </div>
       <div class="step-item">
         <span class="step-number">②</span>
-        <p>1日1分だけ<br>メッセージ送るぉ</p>
+        <p>ぴえん系彼女が<br>ヒアリング</p>
       </div>
       <div class="step-item">
         <span class="step-number">③</span>
-        <p>ぴえん系彼女が<br>反応＆アドバイス！</p>
+        <p>毎日応援されながら<br>習得するぉ！</p>
       </div>
     </div>
   </section>
 
   <section class="cta-final" id="apply">
-    <h2>ゼロからでも、大丈夫ぉ。</h2>
+    <h2>ぴえんでも大丈夫。ゼロから一緒にやろぉ</h2>
     <p>ぴえん系彼女と、いっしょにWEB制作はじめよ？</p>
     <a href="https://lin.ee/xxxxxxxx" class="cta-button-large" target="_blank">LINEで始めるぉ</a>
   </section>
