@@ -96,19 +96,20 @@
       color: #261A18;
     }
     .feature-list {
-  display: flex; /* グリッド → フレックスに変更 */
-  flex-wrap: wrap; /* 折り返さず横に並べる */
-  gap: 20px;
-  overflow-x: auto; /* はみ出た分は横スクロールにする */
+  display: flex;
+  flex-wrap: wrap; /* ← 折り返し可能に！ */
+  justify-content: center; /* ← 中央揃え */
+  gap: 20px; /* ← 余白をつけてくっつき防止！ */
   padding-bottom: 10px;
 }
-    .feature-item {
-      background: #F2A2C8;
-      padding: 20px;
-      border-radius: 12px;
-      color: #ffffff;
-      max-width: 300px;  /* ← 追加すると良い感じに揃うぉ */
-    }
+.feature-item {
+  background: #F2A2C8;
+  padding: 20px;
+  border-radius: 12px;
+  color: #ffffff;
+  width: 280px; /* ← 幅を揃えるとキレイに並ぶ！ */
+  text-align: center;
+}
     .steps {
       background: #f0f5ff;
       color: #261A18;
