@@ -96,11 +96,12 @@
       color: #261A18;
     }
     .feature-list {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-      margin-top: 30px;
-    }
+  display: flex; /* グリッド → フレックスに変更 */
+  flex-wrap: nowrap; /* 折り返さず横に並べる */
+  gap: 20px;
+  overflow-x: auto; /* はみ出た分は横スクロールにする */
+  padding-bottom: 10px;
+}
     .feature-item {
       background: #F2A2C8;
       padding: 20px;
